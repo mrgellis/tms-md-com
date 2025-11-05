@@ -121,7 +121,7 @@ TMS.md fills these gaps by:
 
 ## Contact & Resources
 
-- **Email**: info@tms.md
+- **Email**: info@tmsmd.com
 - **GitHub**: https://github.com/mrgellis/tms-md-com
 - **Privacy**: Cookie-free analytics, GDPR/CCPA compliant
 - **Medical Disclaimer**: Educational purposes only, consult healthcare provider

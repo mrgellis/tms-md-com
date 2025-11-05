@@ -227,7 +227,7 @@ Cache headers optimized for static assets (1 year).
 
 3. **Configure Custom Domain**
    - In Netlify: Site settings → Domain management
-   - Add custom domain: `tms.md.com`
+   - Add custom domain: `tmsmd.com`
    - Configure DNS records as instructed
    - Enable HTTPS (automatic via Let's Encrypt)
 
@@ -319,8 +319,8 @@ bun run lint
 
 ## 🔗 USEFUL LINKS
 
-- **Domain**: https://tms.md.com (to be configured)
-- **GitHub**: https://github.com/mrgellis/tms-md-com (to be created)
+- **Domain**: https://tmsmd.com
+- **GitHub**: https://github.com/mrgellis/tms-md-com
 - **Netlify**: (dashboard link after deployment)
 - **Google Trends**: Search "TMS therapy" to monitor demand
 - **MTHFR Resources**: https://mthfr.net
