@@ -119,7 +119,9 @@ tms-md-com/
 ## 🔐 SECURITY HEADERS (netlify.toml)
 
 All security headers configured in `netlify.toml`:
-- **Content-Security-Policy**: Allows fonts.googleapis.com, GTM, GA
+- **Content-Security-Policy**: Allows fonts.googleapis.com, GTM, GA, Plausible Analytics
+  - `script-src`: Includes https://plausible.clpn.io for script loading
+  - `connect-src`: Includes https://plausible.clpn.io for analytics data transmission
 - **X-Frame-Options**: DENY
 - **X-Content-Type-Options**: nosniff
 - **Referrer-Policy**: strict-origin-when-cross-origin
@@ -149,16 +151,35 @@ Cache headers optimized for static assets (1 year).
 
 ## 📊 ANALYTICS SETUP
 
-### Google Tag Manager
+### Plausible Analytics (Active) ✅
+- **Status**: ✅ ACTIVE - Privacy-friendly analytics configured
+- **Domain**: tmsmd.com
+- **Script Source**: https://plausible.clpn.io/js/script.js
+- **Implementation**: Standard Plausible script tag with `defer` attribute
+- **CSP Configuration**: ✅ Configured in netlify.toml
+  - Script loading allowed from plausible.clpn.io
+  - Analytics data transmission allowed to plausible.clpn.io
+- **Privacy**: Cookie-free, GDPR compliant, no personal data collected
+
+**Benefits of Plausible**:
+- Lightweight (< 1KB script)
+- Privacy-first (no cookies, GDPR/CCPA compliant)
+- Real-time dashboard
+- Simple metrics (pageviews, referrers, goals)
+- Faster page loads vs Google Analytics
+
+### Google Tag Manager (Optional)
 - GTM placeholder added to index.html (commented out)
 - Instructions to replace `GTM-XXXXXXX` with actual ID
 - Both script and noscript tags included
+- Can be used alongside Plausible if needed
 
 ### Recommended Events to Track
 - Form submissions (patient-waitlist, clinic-interest)
 - Scroll depth
 - CTA clicks
 - Outbound link clicks
+- "Add Your Clinic" link clicks
 
 ## 🚀 DEPLOYMENT INSTRUCTIONS
 
