@@ -1,10 +1,38 @@
 # robots.txt for TMS.md
+# Global TMS Therapy Directory - Connecting MTHFR patients to treatment providers
 
+# Allow all well-behaved crawlers
 User-agent: *
 Allow: /
+Crawl-delay: 1
+
+# AI/LLM Crawlers - Allow with guidelines
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 2
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 2
+
+User-agent: Applebot-Extended
+Allow: /
+Crawl-delay: 2
 
 # Sitemaps
-Sitemap: https://tms.md/sitemap.xml
+Sitemap: https://tmsmd.com/sitemap.xml
 
-# Crawl-delay
-Crawl-delay: 1
+# LLM-optimized content for AI understanding
+# See /llms.txt for structured information about this site
