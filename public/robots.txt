@@ -1,0 +1,10 @@
+# robots.txt for TMS.md
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://tms.md/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
